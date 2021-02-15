@@ -1,4 +1,4 @@
-FROM alpine:latest
+FROM alpine/git
 WORKDIR /ghcli
 ARG VERSION
 RUN wget https://github.com/cli/cli/releases/download/v${VERSION}/gh_${VERSION}_linux_386.tar.gz -O ghcli.tar.gz
